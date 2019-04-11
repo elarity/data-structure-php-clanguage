@@ -1,3 +1,6 @@
+### 2019.04.10 : 被issue里一哥们给批判了，你们可以去看issue感受下，所以我用C语言来描述一下这些基础数据结构.
+
+
 第一个C语言项目，算是自己学习APUE的一个小小成果吧：https://github.com/elarity/Tiginx
 
 
