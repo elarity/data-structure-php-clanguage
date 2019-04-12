@@ -17,7 +17,7 @@ int  get_sq_length( seq_list * );
 void range_sq( seq_list * );
 
 int main( void ) {
-  // 声明一个线性表
+  // 声明一个线性表.
   seq_list sq; 
   sq.length = 0;
   create_element( 1, 1, &sq );
