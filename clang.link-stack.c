@@ -49,7 +49,7 @@ void push( link_stack_p s, int element ) {
   // malloc一个新节点
   link_stack_node_p s_node = ( link_stack_node_p )malloc( sizeof( link_stack_node ) );  
   s_node->element = element;  
-  s_node->next    = NULL;
+  s_node->next    = s->top_pointer;
   // 将栈s的 元素数量加1并将栈顶指针指向该新节点
   s->length++;
   s->top_pointer = s_node;
@@ -61,6 +61,9 @@ int pop( link_stack_p s ) {
     printf( "空栈\n" );
     exit( -1 );
   }
+  // 将栈顶指针指向 次栈顶 节点！
+  s->length--; 
+  s->top_pointer = s->top_pointer->next;
   // 然后。。开始pop,这个由于节点的内存都是通过malloc过来的，所以，pop后要free下
   // 不然内存就炸裂了
   int temp;
@@ -69,6 +72,5 @@ int pop( link_stack_p s ) {
   temp = ( *( s->top_pointer ) ).element;
   // free内存 并将长度减1
   free( s->top_pointer );
-  s->length--; 
   return temp;
 }
