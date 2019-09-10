@@ -1,4 +1,5 @@
-微信公众号：![](https://t.ti-node.com/static/default/img/vx_service_qrcode.jpg)
+### 微信公众号：
+![](https://t.ti-node.com/static/default/img/vx_service_qrcode.jpg)
 
 
 ### 2019.04.10 : 被issue里一哥们给批判了，你们可以去看issue感受下，所以我用C语言来描述一下这些基础数据结构.如果有比较沙雕的代码错误，你们就issue里喷我，反正我懒得鸟你们.
